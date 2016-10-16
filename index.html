@@ -1,15 +1,23 @@
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="app.css">
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Word on the Beat</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
 
-<form class="new-song">	
-	<input class="parsable" type="text"><br>
-	<input type="submit">
-</form>
+	<body>
+		<div class="new-song">
+			<p class="new-song__form-description">Enter a new song in this format: <span class="new-song__form-description--grey">title/artist/link (optional)</span></p>
+			<form class="new-song__form">
+				<input type="text"><br>
+				<input class="new-song__submit" type="submit" value="Add Song">
+			</form>
 
+			<ul class="new-song__list"></ul>
+		</div>
 
-<div class="result">
-	<p class="song" style=""><span class="title">Cool New Song Title</span><span class="artist">Some Artist</span></p>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="app.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>

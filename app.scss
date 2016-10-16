@@ -1,0 +1,38 @@
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+p, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.new-song {
+	&__result {
+		opacity: 0;
+		transform: translateY(-10px);
+		transition: all 0.5s; 
+	}
+
+	&__title {
+		font-size: 24px;
+		margin-right:10px;
+	}
+
+	&__artist {
+		font-size: 18px;
+		color: grey;
+	}
+
+	&__form-description {
+		&--grey {
+			color: grey;			
+		}
+	}
+}
+
+.drop-show {
+	opacity: 1;
+	transform: translateY(0);
+}
