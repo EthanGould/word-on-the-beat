@@ -9,7 +9,7 @@ p, ul, li {
 .new-song__result {
   opacity: 0;
   transform: translateY(-10px);
-  transition: all 0.5s; }
+  transition: all 3s; }
 .new-song__title {
   font-size: 24px;
   margin-right: 10px; }
